@@ -12,7 +12,7 @@ public class App {
 
 
     get("/", (request, response) -> {
-      HashMap model = new HashMap();
+      HashMap<String, Object> model = new HashMap<>();
       model.put("template", "templates/index.vtl" );
 
       return new ModelAndView(model, layout);
